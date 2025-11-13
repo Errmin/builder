@@ -165,7 +165,7 @@ jobs:
           MAKE_JOBS=$(($(nproc)+1))
           echo "$MAKE_JOBS thread compile"
           # init build config
-          ./xmake.sh -I -t $TARGET
+          ./xmake.sh -I -t rd03
           G_DEVICE_NAME=$( grep -so '^CONFIG_TARGET.*DEVICE.*=y' .config | sed -r 's/.*DEVICE_(.*)=y/\1/' )
           [ -z "$G_DEVICE_NAME" ] && exit 31
           G_BOARD_NAME=$( grep -so '^CONFIG_TARGET_BOARD=.*' .config | cut -d'"' -f2 )
