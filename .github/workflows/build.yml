@@ -250,5 +250,5 @@ jobs:
           name: '${{ needs.check.outputs.tag }}'
           body: |
             OpenWrt ${{ needs.check.outputs.fw_ver }} [${{ needs.check.outputs.fw_date }}]
-            author: [ТВОЙ_НИК](https://github.com/ТВОЙ_НИК)
+            author: [Errmin](https://github.com/Errmin)
           files: ./public/*.zip
