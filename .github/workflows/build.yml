@@ -108,7 +108,7 @@ jobs:
     runs-on: ubuntu-24.04
     strategy:
        fail-fast: false
-        matrix:
+       matrix:
           target: [rd03]
     steps:
       - name: Initialization environment
